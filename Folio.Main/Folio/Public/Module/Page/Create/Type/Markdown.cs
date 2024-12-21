@@ -3,25 +3,25 @@ using System.IO;
 using System.Threading.Tasks;
 using Avalonia.Media;
 using Avalonia.Media.Imaging;
-using Avalonia.Platform.Storage;
 using Avalonia.Threading;
 using Folio.Public.Classes;
+using Folio.Public.Module.Util;
 
 namespace Folio.Public.Module.Page.Create;
 
-public class Image
+public class Markdown
 {
     public static async void Parse(string file)
     {
-        await Task.Run(() =>
+        await Task.Run(async () =>
         {
             try
             {
-                using Stream stream = File.OpenRead(file);
-                IImage image = new Bitmap(stream);
+                var text = await File.ReadAllTextAsync(file);
                 Dispatcher.UIThread.Invoke(() =>
                 {
-                    App.UiRoot.ViewModel.Pages.Add(new IPage(Path.GetFileName(file), new PageTemplate.Image(image),
+                    App.UiRoot.ViewModel.Pages.Add(new IPage(Path.GetFileName(file),
+                        new PageTemplate.Markdown(text),
                         file, null, true));
                 }, DispatcherPriority.ApplicationIdle);
             }

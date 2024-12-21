@@ -30,7 +30,7 @@ public partial class MainWindow : Window
                         Root.CornerRadius = new CornerRadius(8);
                         break;
                     case WindowState.Maximized:
-                        Root.Margin = new Thickness(10);
+                        Root.Margin = new Thickness(8);
                         Root.CornerRadius = new CornerRadius(0);
                         break;
                 }

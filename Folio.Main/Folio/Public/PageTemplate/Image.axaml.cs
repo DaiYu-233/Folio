@@ -12,5 +12,11 @@ public partial class Image : UserControl
     {
         InitializeComponent();
         Viewer.Source = image;
+        Loaded += (_, _) =>
+        {
+            Viewer.TranslateY = 0;
+            Viewer.TranslateX = 0;
+            Viewer.Scale = 0.6;
+        };
     }
 }

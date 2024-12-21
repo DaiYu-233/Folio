@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia.Browser" />
+    <PackageReference Include="Dove.Avalonia.Controls.Extensions" />
+    <PackageReference Include="Dove.Avalonia.Extensions.Media" />
   </ItemGroup>
 
   <ItemGroup>

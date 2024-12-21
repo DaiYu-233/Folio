@@ -6,22 +6,26 @@
   <ItemGroup>
     <!-- Avalonia packages -->
     <!-- Important: keep version in sync! -->
-    <PackageVersion Include="Avalonia" Version="11.2.2" />
+    <PackageVersion Include="Avalonia" Version="11.2.3" />
     <PackageVersion Include="Avalonia.AvaloniaEdit" Version="11.1.0" />
-    <PackageVersion Include="Avalonia.Markup.Xaml.Loader" Version="11.2.2" />
-    <PackageVersion Include="Avalonia.Themes.Fluent" Version="11.2.2" />
-    <PackageVersion Include="Avalonia.Fonts.Inter" Version="11.2.2" />
-    <PackageVersion Include="Avalonia.Diagnostics" Version="11.2.2" />
-    <PackageVersion Include="Avalonia.Desktop" Version="11.2.2" />
-    <PackageVersion Include="Avalonia.iOS" Version="11.2.2" />
-    <PackageVersion Include="Avalonia.Browser" Version="11.2.2" />
-    <PackageVersion Include="Avalonia.Android" Version="11.2.2" />
+    <PackageVersion Include="Avalonia.Markup.Xaml.Loader" Version="11.2.3" />
+    <PackageVersion Include="Avalonia.Themes.Fluent" Version="11.2.3" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="11.2.3" />
+    <PackageVersion Include="Avalonia.Diagnostics" Version="11.2.3" />
+    <PackageVersion Include="Avalonia.Desktop" Version="11.2.3" />
+    <PackageVersion Include="Avalonia.iOS" Version="11.2.3" />
+    <PackageVersion Include="Avalonia.Browser" Version="11.2.3" />
+    <PackageVersion Include="Avalonia.Android" Version="11.2.3" />
     <PackageVersion Include="AvaloniaEdit.TextMate" Version="11.1.0" />
     <PackageVersion Include="AvaloniaEdit.TextMate.Grammars" Version="0.10.12" />
     <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageVersion Include="Dove.Avalonia.Controls.Extensions" Version="2.0.5" />
+    <PackageVersion Include="Dove.Avalonia.Extensions.Media" Version="2.0.3" />
     <PackageVersion Include="Irihi.Ursa" Version="1.6.2" />
     <PackageVersion Include="Irihi.Ursa.Themes.Semi" Version="1.6.2" />
+    <PackageVersion Include="Markdown.Avalonia" Version="11.0.3-a1" />
     <PackageVersion Include="Semi.Avalonia" Version="11.2.1.2" />
+    <PackageVersion Include="VideoLAN.LibVLC.Windows" Version="3.0.21" />
     <PackageVersion Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.13" />
   </ItemGroup>
 </Project>

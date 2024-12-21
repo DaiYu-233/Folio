@@ -43,7 +43,16 @@ public partial class MainViewModel : ViewModelBase
                 continue;
             }
 
-            NewPage.CreateNewPage(file);
+            await Task.Run(() =>
+            {
+                try
+                {
+                    NewPage.CreateNewPage(file);
+                }
+                catch
+                {
+                }
+            });
         }
 
         await Task.Delay(20);

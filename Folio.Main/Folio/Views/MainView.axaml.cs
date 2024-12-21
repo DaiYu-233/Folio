@@ -60,10 +60,28 @@ public partial class MainView : UserControl
             entry.Bg = (SolidColorBrush)a!;
             ViewModel.SelectedPage = entry;
         }
+        else if (e.GetCurrentPoint(this).Properties.IsMiddleButtonPressed)
+        {
+            var uuid = (sender as Border)!.Tag;
+            var entry = ViewModel.Pages.FirstOrDefault(page => page.Uuid == (string)uuid!);
+            if (entry == null || entry.Uuid == "home") return;
+            if (entry == ViewModel.SelectedPage)
+            {
+                ViewModel.Pages[0].Select();
+            }
+
+            ViewModel.Pages.Remove(entry);
+        }
         else if (e.GetCurrentPoint(this).Properties.IsRightButtonPressed)
         {
-            if (sender == null || (sender as Border)!.Tag == "home") return;
+            var uuid = (sender as Border)!.Tag;
+            var entry = ViewModel.Pages.FirstOrDefault(page => page.Uuid == (string)uuid!);
             (sender as Border)!.ContextFlyout!.ShowAt((sender as Border)!);
+            if (entry!.Uuid == "home")
+            {
+                ((sender as Border)!.ContextFlyout as MenuFlyout)!.Items.Cast<MenuItem>()
+                    .FirstOrDefault(item => item.Tag as string == "CloseTabMenuItem")!.IsEnabled = false;
+            }
         }
     }
 
@@ -77,5 +95,18 @@ public partial class MainView : UserControl
         }
 
         e.Handled = true;
+    }
+
+    private void CloseTabMenuItem_OnClick(object? sender, RoutedEventArgs e)
+    {
+        var tag = ((sender as MenuItem)!.Parent!.Parent!.Parent! as Border)!.Tag;
+        var entry = ViewModel.Pages.FirstOrDefault(page => page.Uuid == (string)tag!);
+        if (entry == null || entry.Uuid == "home") return;
+        if (entry == ViewModel.SelectedPage)
+        {
+            ViewModel.Pages[0].Select();
+        }
+
+        ViewModel.Pages.Remove(entry);
     }
 }

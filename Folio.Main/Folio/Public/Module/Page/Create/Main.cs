@@ -37,9 +37,14 @@ public class NewPage
             case ".jpeg":
             case ".gif":
             case ".bmp":
-            case ".svg":
             case ".webp":
                 Image.Parse(file);
+                break;
+            case ".md":
+                Markdown.Parse(file);
+                break;
+            case ".mp4":
+                Video.Parse(file);
                 break;
             default:
                 Text.Parse(file);

@@ -24,9 +24,13 @@
     <PackageReference Include="AvaloniaEdit.TextMate" />
     <PackageReference Include="AvaloniaEdit.TextMate.Grammars" />
     <PackageReference Include="CommunityToolkit.Mvvm" />
+    <PackageReference Include="Dove.Avalonia.Controls.Extensions" />
+    <PackageReference Include="Dove.Avalonia.Extensions.Media" />
     <PackageReference Include="Irihi.Ursa" />
     <PackageReference Include="Irihi.Ursa.Themes.Semi" />
+    <PackageReference Include="Markdown.Avalonia" />
     <PackageReference Include="Semi.Avalonia" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,5 +51,9 @@
 
   <ItemGroup>
     <None Remove="Public\PageTemplate\Image.axaml~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageVersion Update="Dove.Avalonia.Extensions.Media" Version="2.0.2" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 <Application
-    RequestedThemeVariant="Light"
+    RequestedThemeVariant="Dark"
     x:Class="Folio.App"
     xmlns="https://github.com/avaloniaui"
     xmlns:semi="https://irihi.tech/semi"
@@ -11,13 +11,13 @@
                 <ResourceInclude Source="/Public/Styles/IconPath.axaml" />
                 <ResourceInclude Source="/Public/Styles/Theme.axaml" />
             </ResourceDictionary.MergedDictionaries>
-            <Color x:Key="SystemAccentColor">#00feff</Color>
-            <Color x:Key="SystemAccentColorLight1">#00feff</Color>
-            <Color x:Key="SystemAccentColorLight2">#00feff</Color>
-            <Color x:Key="SystemAccentColorLight3">#00feff</Color>
-            <Color x:Key="SystemAccentColorDark1">#00feff</Color>
-            <Color x:Key="SystemAccentColorDark2">#00feff</Color>
-            <Color x:Key="SystemAccentColorDark3">#00feff</Color>
+            <!-- <Color x:Key="SystemAccentColor">#00feff</Color> -->
+            <!-- <Color x:Key="SystemAccentColorLight1">#00feff</Color> -->
+            <!-- <Color x:Key="SystemAccentColorLight2">#00feff</Color> -->
+            <!-- <Color x:Key="SystemAccentColorLight3">#00feff</Color> -->
+            <!-- <Color x:Key="SystemAccentColorDark1">#00feff</Color> -->
+            <!-- <Color x:Key="SystemAccentColorDark2">#00feff</Color> -->
+            <!-- <Color x:Key="SystemAccentColorDark3">#00feff</Color> -->
             <FontFamily x:Key="Font">avares://Folio/Assets#MiSans</FontFamily>
             <FontWeight x:Key="FontWeight">Bold</FontWeight>
         </ResourceDictionary>

@@ -1,5 +1,6 @@
 ﻿using System;
 using Avalonia;
+using Avalonia.Extensions.Media;
 
 namespace Folio.Desktop;
 
@@ -19,6 +20,7 @@ sealed class Program
         return AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
+            .UseVideoView()
             .LogToTrace();
     }
 }

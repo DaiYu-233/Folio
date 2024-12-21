@@ -19,6 +19,9 @@
       <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Dove.Avalonia.Controls.Extensions" />
+    <PackageReference Include="Dove.Avalonia.Extensions.Media" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" />
   </ItemGroup>
 
   <ItemGroup>
