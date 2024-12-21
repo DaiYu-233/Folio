@@ -1,0 +1,39 @@
+<Window
+    Icon="/Assets/Icon.ico"
+    IsHitTestVisible="True"
+    Title="Folio"
+    WindowStartupLocation="CenterScreen"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="Folio.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:Folio.Public.Controls"
+    xmlns:views="clr-namespace:Folio.Views"
+    xmlns:vm="clr-namespace:Folio.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.DataContext>
+        <vm:MainWindowModel />
+    </Design.DataContext>
+    <Window.Styles>
+        <Style Selector="Window">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <SolidColorBrush Color="White" Opacity="0" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Styles>
+    <Border
+        Background="{DynamicResource WdBg}"
+        BorderThickness="0"
+        ClipToBounds="True"
+        CornerRadius="8"
+        x:Name="Root">
+        <Grid>
+            <views:MainView Name="View" />
+        </Grid>
+    </Border>
+</Window>

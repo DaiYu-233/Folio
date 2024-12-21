@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+	<!-- 网络访问权限 -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- 读取外部存储权限，用于读取文件等操作，从 Android 6.0（API 级别 23）起，运行时还需动态申请 -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<!-- 写入外部存储权限，用于写入文件等操作，从 Android 6.0（API 级别 23）起，运行时还需动态申请 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<application android:label="Folio" android:icon="@drawable/Icon" />
+</manifest>

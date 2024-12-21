@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush Color="#eeeeee" x:Key="WdBg" />
+            <SolidColorBrush Color="#e1e1e1" x:Key="PageItemBg" />
+            <SolidColorBrush Color="#ffffff" x:Key="SelectedPageItemBg" />
+            <SolidColorBrush Color="#FFE9F6FF" x:Key="1x" />
+            <SolidColorBrush Color="#f6fafd" x:Key="2x" />
+            <SolidColorBrush Color="#333333" x:Key="TextColor" />
+            <SolidColorBrush Color="#e7f5ff" x:Key="TitleBarColor" />
+            <SolidColorBrush Color="#7e7e7e" x:Key="GrayColor" />
+            <SolidColorBrush Color="#e1e9f0" x:Key="BorderBrushColor" />
+            <SolidColorBrush Color="#DFEFFF" x:Key="ListBoxItemSelectedBackground" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Dark">
+            <SolidColorBrush Color="#191919" x:Key="WdBg" />
+            <SolidColorBrush Color="#222222" x:Key="PageItemBg" />
+            <SolidColorBrush Color="#383838" x:Key="SelectedPageItemBg" />
+            <SolidColorBrush Color="#2c2c2c" x:Key="1x" />
+            <SolidColorBrush Color="#262626" x:Key="2x" />
+            <SolidColorBrush Color="#ffffff" x:Key="TextColor" />
+            <SolidColorBrush Color="#242424" x:Key="TitleBarColor" />
+            <SolidColorBrush Color="#7e7e7e" x:Key="GrayColor" />
+            <SolidColorBrush Color="#e1e9f0" x:Key="BorderBrushColor" />
+            <SolidColorBrush Color="#383838" x:Key="ListBoxItemSelectedBackground" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

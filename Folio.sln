@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3DA99C4E-89E3-4049-9C22-0A7EC60D83D8}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Folio.Main", "Folio.Main", "{5AE2927B-0ACE-408E-847A-8D8005AC3B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Folio", "Folio.Main\Folio\Folio.csproj", "{7952C516-066C-4C39-8447-EBECCF2D02DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Folio.Android", "Folio.Main\Folio.Android\Folio.Android.csproj", "{ED2FDCF4-388C-4081-AA4F-9D801B83296E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Folio.Browser", "Folio.Main\Folio.Browser\Folio.Browser.csproj", "{3854408F-97EC-4F4B-ADC0-DDA547AC7BDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Folio.Desktop", "Folio.Main\Folio.Desktop\Folio.Desktop.csproj", "{95843012-7625-4EB4-9889-F72A6431DB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Folio.iOS", "Folio.Main\Folio.iOS\Folio.iOS.csproj", "{6A7B5479-4DBC-4301-BC09-AEBE888C7408}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7952C516-066C-4C39-8447-EBECCF2D02DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7952C516-066C-4C39-8447-EBECCF2D02DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7952C516-066C-4C39-8447-EBECCF2D02DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7952C516-066C-4C39-8447-EBECCF2D02DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2FDCF4-388C-4081-AA4F-9D801B83296E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2FDCF4-388C-4081-AA4F-9D801B83296E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2FDCF4-388C-4081-AA4F-9D801B83296E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2FDCF4-388C-4081-AA4F-9D801B83296E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3854408F-97EC-4F4B-ADC0-DDA547AC7BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3854408F-97EC-4F4B-ADC0-DDA547AC7BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3854408F-97EC-4F4B-ADC0-DDA547AC7BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3854408F-97EC-4F4B-ADC0-DDA547AC7BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95843012-7625-4EB4-9889-F72A6431DB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95843012-7625-4EB4-9889-F72A6431DB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95843012-7625-4EB4-9889-F72A6431DB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95843012-7625-4EB4-9889-F72A6431DB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A7B5479-4DBC-4301-BC09-AEBE888C7408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A7B5479-4DBC-4301-BC09-AEBE888C7408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A7B5479-4DBC-4301-BC09-AEBE888C7408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A7B5479-4DBC-4301-BC09-AEBE888C7408}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83CB65B8-011F-4ED7-BCD3-A6CFA935EF7E}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7952C516-066C-4C39-8447-EBECCF2D02DA} = {5AE2927B-0ACE-408E-847A-8D8005AC3B4E}
+		{ED2FDCF4-388C-4081-AA4F-9D801B83296E} = {5AE2927B-0ACE-408E-847A-8D8005AC3B4E}
+		{3854408F-97EC-4F4B-ADC0-DDA547AC7BDD} = {5AE2927B-0ACE-408E-847A-8D8005AC3B4E}
+		{95843012-7625-4EB4-9889-F72A6431DB37} = {5AE2927B-0ACE-408E-847A-8D8005AC3B4E}
+		{6A7B5479-4DBC-4301-BC09-AEBE888C7408} = {5AE2927B-0ACE-408E-847A-8D8005AC3B4E}
+	EndGlobalSection
+EndGlobal

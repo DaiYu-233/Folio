@@ -1,0 +1,32 @@
+<Application
+    RequestedThemeVariant="Light"
+    x:Class="Folio.App"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:semi="https://irihi.tech/semi"
+    xmlns:u-semi="https://irihi.tech/ursa/themes/semi"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="/Public/Styles/IconPath.axaml" />
+                <ResourceInclude Source="/Public/Styles/Theme.axaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="SystemAccentColor">#00feff</Color>
+            <Color x:Key="SystemAccentColorLight1">#00feff</Color>
+            <Color x:Key="SystemAccentColorLight2">#00feff</Color>
+            <Color x:Key="SystemAccentColorLight3">#00feff</Color>
+            <Color x:Key="SystemAccentColorDark1">#00feff</Color>
+            <Color x:Key="SystemAccentColorDark2">#00feff</Color>
+            <Color x:Key="SystemAccentColorDark3">#00feff</Color>
+            <FontFamily x:Key="Font">avares://Folio/Assets#MiSans</FontFamily>
+            <FontWeight x:Key="FontWeight">Bold</FontWeight>
+        </ResourceDictionary>
+    </Application.Resources>
+    <Application.Styles>
+        <FluentTheme />
+        <semi:SemiTheme Locale="zh-CN" />
+        <u-semi:SemiTheme Locale="zh-CN" />
+        <StyleInclude Source="avares://AvaloniaEdit/Themes/Fluent/AvaloniaEdit.xaml" />
+        <StyleInclude Source="/Public/Styles/Style.axaml" />
+    </Application.Styles>
+</Application>
